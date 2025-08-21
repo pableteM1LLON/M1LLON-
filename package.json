@@ -1,0 +1,22 @@
+{
+    "name": "millon-bot",
+      "version": "1.0.0",
+        "description": "Bot de trading automático para M1LLON",
+          "main": "dist/index.js",
+            "scripts": {
+                "dev": "node -r ts-node/register -r dotenv/config src/getAAPLData.ts",
+                    "start": "node dist/getAAPLData.js",
+                        "build": "tsc",
+                            "clean": "rm -rf dist node_modules package-lock.json",
+                                "install-safe": "npm install --no-audit --fund=false --optional=false"
+                                  },
+                                    "dependencies": {
+                                        "@alpacahq/alpaca-trade-api": "2.16.1",
+                                            "dotenv": "16.4.5",
+                                                "ts-node": "10.9.2"
+                                                  },
+                                                    "devDependencies": {
+                                                        "@types/node": "20.11.0",
+                                                            "typescript": "5.4.0"
+                                                              }
+                                                              }
